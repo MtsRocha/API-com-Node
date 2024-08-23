@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-//Add esses imports
-import {TeacherFormComponent} from "./teacher-form/teacher-form.component";
-import {TeacherListComponent} from "./teacher-list/teacher-list.component";
 
+//Adicionar imports
+
+import { TeacherFormComponent } from './teacher-form/teacher-form.component';
+import { TeacherListComponent } from './teacher-list/teacher-list.component';
 
 //Alterar routes para adicionar as rotas /teachers e /addTeacher
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {
     path: 'addTeacher',
     component: TeacherFormComponent
-  }];
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
