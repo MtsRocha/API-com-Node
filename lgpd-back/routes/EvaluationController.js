@@ -26,7 +26,7 @@ router.get("/evaluation/:id", async function (req, res) {
     return res.status(200).json(evaluation);
 });
 
-router.delete("/deleteEEvaluation/:id", async function (req, res) {
+router.delete("/deleteEvaluation/:id", async function (req, res) {
     
     const evaluation = await evaluationService.deleteEvaluationById(req.params.id);
     return res.status(200).json(evaluation);
