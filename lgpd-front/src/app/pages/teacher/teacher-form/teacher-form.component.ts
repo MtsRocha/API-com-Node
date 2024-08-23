@@ -29,7 +29,16 @@ export class TeacherFormComponent {
             placeholder: 'Nome do Professor',
             required: true,
           },
-        }
+        },
+        {
+          key: 'course_id',
+          type: 'input',
+          props: {
+            label: 'Curso',
+            placeholder: 'Nome do Curso',
+            required: true,
+          },
+        },
       ]
     }
   ];
