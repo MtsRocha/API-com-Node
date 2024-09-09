@@ -85,7 +85,7 @@ export class UserFormComponent {
     this.route.queryParams.subscribe(async (params: any) => {
       if (params.id !== undefined && params.id !== null) {
         this.user = await this.userService.get<any>({
-          url: `http://localhost:3000/user/${params.id}`,
+          url: `http://localhost:3000/user${params.id}`,
           params: {
           }
         });
